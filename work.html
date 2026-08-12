@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Work | Sheldon Kikechi</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="brand">Sheldon Kikechi <span class="dot">•</span></a>
+  <button class="menu-btn" id="menuOpen" aria-label="Open menu"><span></span></button>
+</header>
+
+<nav class="nav-overlay" id="navOverlay">
+  <div class="nav-top">
+    <h3>Sheldon Kikechi</h3>
+    <button class="nav-close" id="menuClose" aria-label="Close menu">✕</button>
+  </div>
+  <div class="nav-links">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="work.html" class="nav-link">Work</a>
+    <a href="services.html" class="nav-link">Services</a>
+    <a href="about.html" class="nav-link">About Me</a>
+    <a href="contact.html" class="nav-link">Contact Me</a>
+  </div>
+  <a class="nav-cta" href="contact.html">Start a Project</a>
+</nav>
+
+<main class="page-head">
+  <p class="eyebrow-label reveal">Selected Work</p>
+  <h1 class="reveal">A few things I've built.</h1>
+  <p class="body-text reveal">These are personalized birthday sites I built — passcode-protected, made for a specific person. Tap in and see for yourself.</p>
+
+  <div class="work-grid">
+    <div class="work-card reveal-img">
+      <div class="thumb">BIRTHDAY SITE 01</div>
+      <div class="info">
+        <h3>Surprise Birthday Drop 🎉</h3>
+        <p>A personalized, passcode-locked birthday site built as a surprise. Passcode: <strong>30 2006</strong></p>
+        <a href="https://resilient-kangaroo-a847a9.netlify.app/" target="_blank" rel="noopener" class="view-project">Tap Here →</a>
+      </div>
+    </div>
+    <div class="work-card reveal-img">
+      <div class="thumb">BIRTHDAY SITE 02</div>
+      <div class="info">
+        <h3>Another Birthday Drop 🎂</h3>
+        <p>Same idea, different vibe. Also passcode-locked. Passcode: <strong>30 2006</strong></p>
+        <a href="https://stunning-lolly-1757a3.netlify.app/" target="_blank" rel="noopener" class="view-project">Tap Here →</a>
+      </div>
+    </div>
+  </div>
+
+  <p class="body-text reveal" style="margin-top:20px;">More projects coming soon — this page gets updated as I ship new stuff.</p>
+
+  <a href="contact.html" class="btn btn-primary reveal" style="margin-top:10px;">Have a project in mind? Let's talk</a>
+</main>
+
+<footer>© <span id="year"></span> Sheldon Kikechi. Built with care.</footer>
+
+<button class="chat-bubble" aria-label="Contact me" onclick="location.href='contact.html'">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+</button>
+
+<script src="script.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

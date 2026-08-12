@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sheldon Kikechi | Software Engineer &amp; Digital Product Builder</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="brand">Sheldon Kikechi <span class="dot">•</span></a>
+  <button class="menu-btn" id="menuOpen" aria-label="Open menu"><span></span></button>
+</header>
+
+<nav class="nav-overlay" id="navOverlay">
+  <div class="nav-top">
+    <h3>Sheldon Kikechi</h3>
+    <button class="nav-close" id="menuClose" aria-label="Close menu">✕</button>
+  </div>
+  <div class="nav-links">
+    <a href="work.html" class="nav-link">Work</a>
+    <a href="services.html" class="nav-link">Services</a>
+    <a href="about.html" class="nav-link">About Me</a>
+    <a href="contact.html" class="nav-link">Contact Me</a>
+  </div>
+  <a class="nav-cta" href="contact.html">Start a Project</a>
+</nav>
+
+<main class="hero">
+  <p class="eyebrow reveal" id="greeting">Good day, I'm <b>Sheldon Kikechi.</b></p>
+  <h1 class="reveal">I play chess, build software, create digital experiences, and chase ideas that turn into something <span class="accent">real</span>.</h1>
+
+  <div class="cta-row reveal">
+    <a href="work.html" class="btn btn-primary">View My Projects</a>
+    <a href="contact.html" class="btn btn-outline">Let's Build Together</a>
+  </div>
+
+  <div class="stats reveal">
+    <div class="stat"><b>30+</b><span>Projects Completed</span></div>
+    <div class="stat"><b>3+</b><span>Years of Experience</span></div>
+    <div class="stat"><b>15+</b><span>Happy Clients</span></div>
+    <div class="stat"><b>10+</b><span>Systems Architected</span></div>
+  </div>
+
+  <div class="hero-photo reveal-img">
+    <img src="https://files.catbox.moe/iai0cn.png" alt="Sheldon Kikechi">
+  </div>
+</main>
+
+<section>
+  <p class="eyebrow-label reveal">About</p>
+  <h2 class="reveal">Engineer by craft.<br>Builder by instinct.</h2>
+  <p class="body-text reveal">I'm a software engineer and digital product builder, specializing in high-performance systems that drive real business outcomes.</p>
+  <a href="about.html" class="btn btn-outline reveal" style="display:inline-flex;width:auto;padding:12px 24px;font-size:14px;">Read My Full Story →</a>
+</section>
+
+<section>
+  <p class="eyebrow-label reveal">Services</p>
+  <h2 class="reveal">What I build.</h2>
+  <a href="services.html" class="btn btn-outline reveal" style="display:inline-flex;width:auto;padding:12px 24px;font-size:14px;">View Services →</a>
+</section>
+
+<section>
+  <p class="eyebrow-label reveal">Off The Clock</p>
+  <h2 class="reveal">There's more to it than code.</h2>
+  <p class="body-text reveal">I'm also a Chess Grandmaster — repped my school from local comps all the way to Nationals. Outside of that: music, gaming, anime, and an unreasonable amount of love for cats 🐈</p>
+
+  <div class="hero-photo reveal-img" style="aspect-ratio:16/10;margin-bottom:20px;">
+    <img src="https://files.catbox.moe/8udlhm.jpg" alt="Sheldon playing chess">
+  </div>
+
+  <div class="fact-chips reveal">
+    <span class="fact-chip">♟️ Chess Grandmaster</span>
+    <span class="fact-chip">🐈 Cat person</span>
+    <span class="fact-chip">🎮 Gamer</span>
+  </div>
+
+  <a href="about.html" class="btn btn-outline reveal" style="display:inline-flex;width:auto;padding:12px 24px;font-size:14px;">Get To Know Me →</a>
+</section>
+
+<footer>© <span id="year"></span> Sheldon Kikechi. Built with care.</footer>
+
+<button class="chat-bubble" id="chatBubbleLink" aria-label="Contact me" onclick="location.href='contact.html'">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+</button>
+
+<script src="script.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

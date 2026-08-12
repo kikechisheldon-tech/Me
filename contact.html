@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Sheldon Kikechi</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="brand">Sheldon Kikechi <span class="dot">•</span></a>
+  <button class="menu-btn" id="menuOpen" aria-label="Open menu"><span></span></button>
+</header>
+
+<nav class="nav-overlay" id="navOverlay">
+  <div class="nav-top">
+    <h3>Sheldon Kikechi</h3>
+    <button class="nav-close" id="menuClose" aria-label="Close menu">✕</button>
+  </div>
+  <div class="nav-links">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="work.html" class="nav-link">Work</a>
+    <a href="services.html" class="nav-link">Services</a>
+    <a href="about.html" class="nav-link">About Me</a>
+    <a href="contact.html" class="nav-link">Contact Me</a>
+  </div>
+  <a class="nav-cta" href="contact.html">Start a Project</a>
+</nav>
+
+<main>
+  <div class="contact-card reveal">
+    <span class="contact-eyebrow">LET'S CONNECT</span>
+    <h1>Start a conversation</h1>
+    <p class="sub">I typically respond within a few hours. Choose your preferred channel.</p>
+
+    <a class="contact-option whatsapp" href="https://wa.me/254780491903" target="_blank" rel="noopener">
+      <span class="contact-icon">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.8-1.5C8.3 21.5 10.1 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm5.2 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8 0-1.3.7-2 .9-2.2.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5.2.5.7 1.8.8 1.9.1.2.1.3 0 .5-.1.2-.1.3-.3.5-.1.2-.3.4-.4.5-.2.2-.3.3-.1.6.2.3.9 1.4 1.9 2.3 1.3 1.1 2.4 1.5 2.7 1.6.3.1.5.1.7-.1.2-.2.7-.8.9-1.1.2-.3.4-.2.7-.1.3.1 1.7.8 2 .9.3.2.5.2.6.3.1.2.1.8-.1 1.4z"/></svg>
+      </span>
+      <span>
+        <span class="label">Chat on WhatsApp</span><br>
+        <span class="sub">Fastest response</span>
+      </span>
+      <span class="pill">0780 491 903</span>
+    </a>
+
+    <a class="contact-option email" href="mailto:kikechisheldon@gmail.com">
+      <span class="contact-icon">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 6 10-6"/></svg>
+      </span>
+      <span>
+        <span class="label">Send an Email</span><br>
+        <span class="sub-email">kikechisheldon@gmail.com</span>
+      </span>
+    </a>
+
+    <p class="divider">OR DROP A QUICK LINE</p>
+
+    <form id="quickForm" action="https://formsubmit.co/kikechisheldon@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="New message from your website">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" id="quickContact" name="Your Email or Phone Number" placeholder="Your Email or Phone Number" required>
+      <textarea id="quickMessage" name="Message" placeholder="Briefly, what are you looking to build?" required></textarea>
+      <button type="submit" class="send-btn" id="sendBtn">✈ Send Message</button>
+    </form>
+    <p class="form-note">Sends straight to my inbox — no email app needed on your end.</p>
+  </div>
+
+  <div class="contact-card reveal" style="margin-top:20px;">
+    <span class="contact-eyebrow">SUPPORT MY WORK</span>
+    <h2 style="font-size:24px;margin-bottom:8px;">Buy me a coffee ☕</h2>
+    <p class="sub">Loved something I built? Send a quick M-Pesa tip — you'll get a prompt on your phone, enter your PIN, and it's done.</p>
+
+    <div class="fact-chips" id="amountPresets" style="margin-bottom:6px;">
+      <button type="button" class="fact-chip amount-btn" data-amt="50">KES 50</button>
+      <button type="button" class="fact-chip amount-btn" data-amt="100">KES 100</button>
+      <button type="button" class="fact-chip amount-btn" data-amt="200">KES 200</button>
+      <button type="button" class="fact-chip amount-btn" data-amt="500">KES 500</button>
+    </div>
+    <input type="number" id="donateAmount" placeholder="Or enter a custom amount (KES)" min="10">
+    <input type="tel" id="donatePhone" placeholder="Your M-Pesa Number e.g. 0712345678">
+    <input type="email" id="donateEmail" placeholder="Your Email (optional)">
+
+    <button type="button" class="btn btn-primary" id="donateTriggerBtn" style="width:100%;">✈ Send via M-Pesa</button>
+
+    <p class="form-note">Payments processed securely by PesaPal — I never see or store your M-Pesa PIN.</p>
+  </div>
+</main>
+
+<footer>© <span id="year"></span> Sheldon Kikechi. Built with care.</footer>
+
+<script src="script.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

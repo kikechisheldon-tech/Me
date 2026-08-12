@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services | Sheldon Kikechi</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="brand">Sheldon Kikechi <span class="dot">•</span></a>
+  <button class="menu-btn" id="menuOpen" aria-label="Open menu"><span></span></button>
+</header>
+
+<nav class="nav-overlay" id="navOverlay">
+  <div class="nav-top">
+    <h3>Sheldon Kikechi</h3>
+    <button class="nav-close" id="menuClose" aria-label="Close menu">✕</button>
+  </div>
+  <div class="nav-links">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="work.html" class="nav-link">Work</a>
+    <a href="services.html" class="nav-link">Services</a>
+    <a href="about.html" class="nav-link">About Me</a>
+    <a href="contact.html" class="nav-link">Contact Me</a>
+  </div>
+  <a class="nav-cta" href="contact.html">Start a Project</a>
+</nav>
+
+<main class="page-head">
+  <p class="eyebrow-label reveal">Services</p>
+  <h1 class="reveal">What I build.</h1>
+  <p class="body-text reveal">A few of the ways I help businesses turn ideas into working products.</p>
+
+  <div class="services">
+    <div class="service-card reveal">
+      <div class="num">01</div>
+      <h3>Web Design and Development</h3>
+      <p>Modern websites built for performance, trust, and measurable conversion.</p>
+      <a href="contact.html" class="learn-more">Start this project →</a>
+    </div>
+    <div class="service-card reveal">
+      <div class="num">02</div>
+      <h3>Custom Software Systems</h3>
+      <p>Scalable platforms engineered around how your business actually operates.</p>
+      <a href="contact.html" class="learn-more">Start this project →</a>
+    </div>
+    <div class="service-card reveal">
+      <div class="num">03</div>
+      <h3>Mobile Application Development</h3>
+      <p>Cross-platform apps built with Flutter — shipped, performant, and built to scale.</p>
+      <a href="contact.html" class="learn-more">Start this project →</a>
+    </div>
+    <div class="service-card reveal">
+      <div class="num">04</div>
+      <h3>System Architecture</h3>
+      <p>The infrastructure and design decisions that determine whether your product survives growth.</p>
+      <a href="contact.html" class="learn-more">Start this project →</a>
+    </div>
+    <div class="service-card reveal">
+      <div class="num">05</div>
+      <h3>AI Integration</h3>
+      <p>Intelligent features and automation built into products and demos.</p>
+      <a href="contact.html" class="learn-more">Start this project →</a>
+    </div>
+  </div>
+
+  <a href="contact.html" class="btn btn-primary reveal" style="margin-top:30px;">Get a Quote</a>
+</main>
+
+<footer>© <span id="year"></span> Sheldon Kikechi. Built with care.</footer>
+
+<button class="chat-bubble" aria-label="Contact me" onclick="location.href='contact.html'">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+</button>
+
+<script src="script.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
